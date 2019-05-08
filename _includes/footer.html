@@ -1,0 +1,45 @@
+<footer>
+    <p><span><i class="far fa-copyright"></i>&nbsp;Jonathan Whitney </span><span id="copyrightYear"></span></p>
+</footer>
+
+<script>
+    var rpApp = rpApp || {},
+        rpGame = rpGame || {};
+
+    rpApp.assetsPath = '{{ site.baseurl }}/assets/';
+
+    rpApp.preloadAssests = {
+        images: ["avoid.png","background.png","backgroundFloor.png","bg-clouds-back.png","bg-clouds-front.png","bg-clouds-middle.png","bg-ground.png","bg-hills-back.png","bg-hills-front.png","bg-hills-middle.png","bg-sky.png","bg-sun.png","bg-water.png","boss.png","buttons.png","clubinbox.png","collect.png","confetti.png","congratulations.png","controls.png","controlsSmall.png","download.png","exit.png","headshot.png","hero.png","instructions.png","intro.png","level-1-back.png","level-1-front.png","level-1.png","level-3-back.png","level-3-front.png","level-3.png","level-5-back.png","level-5-front.png","level-5.png","level-6-back.png","level-6-front.png","level-6.png","logo.png","matrix.png","professor.png","professorBoard.png","progress.png","rain.png","weapons.png","wheels.png"],
+        mp3: ["effect-blast.mp3","effect-bomb.mp3","effect-button.mp3","effect-collect.mp3","effect-die.mp3","effect-exit.mp3","effect-hit.mp3","effect-jump.mp3","effect-pain.mp3","effect-rain.mp3","effect-select.mp3","effect-shoot-boss.mp3","effect-shoot-hero.mp3","effect-wheel.mp3","eh-hero-adventureland.mp3","eh-villain-day-of-the-living.mp3","email-heroes-intro-supreme-avengers.mp3","email-heroes-level-battlefield.mp3","ending.mp3","intro.mp3","level-1.mp3","level-2.mp3","level-3.mp3","level-4.mp3","level-5.mp3","level-6.mp3","secret.mp3"],
+        ogg: ["effect-blast.ogg","effect-bomb.ogg","effect-button.ogg","effect-collect.ogg","effect-die.ogg","effect-exit.ogg","effect-hit.ogg","effect-jump.ogg","effect-pain.ogg","effect-rain.ogg","effect-select.ogg","effect-shoot-boss.ogg","effect-shoot-hero.ogg","effect-wheel.ogg","email-heroes-intro-supreme-avengers.ogg","email-heroes-level-battlefield.ogg","email-heroes-level-battlefield.xmp","ending.ogg","intro.ogg","level-1-music.ogg","level-1.json","level-1.ogg","level-2.ogg","level-3.json","level-3.ogg","level-4.ogg","level-5.json","level-5.ogg","level-6.json","level-6.ogg","secret.ogg"]
+    };
+
+    rpApp.gameInfographic = 'https://returnpath.com/downloads/path-to-the-inbox-infographic';
+
+    rpApp.text = {
+        loading: 'Loading Path to the Inbox...',
+        title: 'Path to the Inbox',
+        welcome: ', welcome to the Path to the Inbox!',
+        instructions: 'Let\'s pick your character before we begin.',
+        ipwarm: 'IP WARM!',
+        ending: ['You have made it down the path to the inbox and your emails to subscribers are routinely delivered.','You’ve increased conversions and improved this quarter’s metrics - and even the CEO stopped you to recognize your contributions to the company’s bottom line.','You’re an email hero! Are you free to give a TED Talk next March?','Download the Path to the Inbox infographic to relive your journey.'],
+        levels: {
+            1: ['Emails sent from IP addresses with a bad or no sending history are sent to the spam folder or deferred until a reputation is formed.','After you get a new IP address, slowly and steadily increase your sending volume.','After consistently mailing for 30 days you should see an increase in your Sender Score for properly warming up your IP address.','You have a new IP address will and need to warm it up. Collect as many tokens as you can to warm up your IP address and ensure you aren’t banished to the spam folder. Good luck!'],
+            2: ['Your sender reputation is based on factors such as: volume/frequency, unknown users, complaints, infrastructure, blacklists, and spam traps.','Now that your IP is warmed up, you need to keep your sender reputation intact. Spin the wheel (click) to see which obstacle you will face.'],
+            3: ['Maintaining a clean list is critical! Sending to unknown users and inactive subscribers can drag down your engagement metrics.','Both of these could also be converted to spam traps, which are decoy accounts used to catch spammers.','To ensure that you don’t fall victim to spam traps, remove malformed or nonexistent email addresses from your list, audit subscriber activity frequently to identify inactives, and never rent or buy lists.','This should keep you from ever hitting a spam trap—which can be bad news for your sender reputation.','Dodge the subscriber complaints and spam traps to ensure you don’t get banished to the spam folder. Stay safe!'],
+            4: ['You’ve warmed up your IP address and ensured that your reputation is solid, but there is still work to be done.','Being put on blacklists, along with the volume and frequency of your emails, can have a negative impact on your sender reputation.','Spin the wheel (click) to see the next obstacle you will face.'],
+            5: ['Your subscribers have made it clear that they enjoy your emails, but there are limits to your email relationship.','Sending too many emails or having a breach in your email infrastructure could banish you to the spam folder.','Navigate your way through the complexities of the interwebs to get one step closer to reaching the inbox. Watch your step!'],
+            6: ['You’re almost there.','You’ve garnered compliments left and right for your email program’s metrics and you can feel a winning promotion in the works.','But first, one final test.','Use the spacebar to protect yourself (and your email!) as you make the last push to reach the inbox.'],
+        }
+    };
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/phaser-ce/2.10.0/phaser.min.js?ver=5.1.1"></script>
+<script src="{{ site.baseurl }}/assets/js/game.js"></script>
+<script src="{{ site.baseurl }}/assets/js/config.js"></script>
+<script src="{{ site.baseurl }}/assets/js/boot.js"></script>
+<script src="{{ site.baseurl }}/assets/js/load.js"></script>
+<script src="{{ site.baseurl }}/assets/js/intro.js"></script>
+<script src="{{ site.baseurl }}/assets/js/titles.js"></script>
+<script src="{{ site.baseurl }}/assets/js/secret.js"></script>
+<script src="{{ site.baseurl }}/assets/js/play.js"></script>
